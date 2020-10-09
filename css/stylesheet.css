@@ -1,0 +1,113 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-image: url(../images/BG-colour.jpg);
+  color: white;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  position: fixed;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  line-height: 2;
+  align-self: flex-end;
+  position: fixed;
+}
+
+.nav > a {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.nav > a:hover {
+  background-color: white;
+  color: black;
+  padding: 0.5em;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  margin-top: 5vh;
+  max-width: 1240px;
+}
+
+.flex-left-col {
+  display: flex;
+  max-width: 360px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  max-height: 670px;
+}
+
+.flex-content-col {
+  max-width: 670px;
+  flex-grow: 1;
+}
+
+.flex-right-col {
+  display: flex;
+  max-width: 210px;
+  font-weight: 300;
+  align-items: flex-end;
+  margin-left: 30px;
+  max-height: 670px;
+}
+
+.hero {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid white;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.9em;
+  text-shadow: 1px 1px black;
+}
+
+.youtube-vid {
+  box-sizing: border-box;
+  padding: 15px;
+  border: 2px dashed white;
+}
+
+a[href="#top"] {
+  font-size: 16px;
+}
+
+a[href="#top"]:hover {
+  text-decoration: underline;
+}
+
+#Quotes, #Video, #Documentary {
+  scroll-margin-top: 5vh;
+}
