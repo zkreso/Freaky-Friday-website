@@ -1,3 +1,5 @@
+/* Global */
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,8 +9,9 @@ body {
   background-image: url(../images/BG-colour.jpg);
   color: white;
   font-family: 'Roboto', Arial, sans-serif;
-  background-attachment: fixed;
 }
+
+/* Typography */
 
 h1 {
   font-size: 40px;
@@ -19,10 +22,16 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 500;
-  margin-top: 2em;
+  margin-top: 2.5em;
   margin-bottom: 1em;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.9em;
+  text-shadow: 1px 1px black, 2px 2px 10px black;
 }
 
 a {
@@ -30,27 +39,15 @@ a {
   color: white;
 }
 
-.nav {
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 300;
-  line-height: 2;
-  align-self: flex-end;
-  position: fixed;
+a[href="#top"] {
+  font-size: 16px;
 }
 
-.nav > a {
-  font-weight: 700;
-  font-size: 14px;
+a[href="#top"]:hover {
+  text-decoration: underline;
 }
 
-.nav > a:hover {
-  background-color: white;
-  color: black;
-  padding: 0.5em;
-}
-
+/* Layout */
 .container {
   display: flex;
   margin: auto;
@@ -82,30 +79,38 @@ a {
   max-height: 670px;
 }
 
+/* Components */
+.nav {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  line-height: 2;
+  align-self: flex-end;
+  position: fixed;
+}
+
+.nav > a {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.nav > a:hover {
+  background-color: white;
+  color: black;
+  padding: 0.5em;
+}
+
 .hero {
   box-sizing: border-box;
   width: 100%;
-  border: 1px solid white;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.9em;
-  text-shadow: 1px 1px black;
+  border: 2px solid white;
 }
 
 .youtube-vid {
   box-sizing: border-box;
   padding: 15px;
   border: 2px dashed white;
-}
-
-a[href="#top"] {
-  font-size: 16px;
-}
-
-a[href="#top"]:hover {
-  text-decoration: underline;
 }
 
 #Quotes, #Video, #Documentary {
